@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>บุฟเฟ่ต์ทะเล พัทยา — ตัวท็อปจากรีวิว + แผนที่ + ติดต่อ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="คัดร้านบุฟเฟ่ต์ซีฟู้ดพัทยาที่รีวิวเยอะและน่าเชื่อถือ สรุปข้อดี–ข้อเสีย ราคา เวลา เบอร์โทร ลิงก์เพจ และแผนที่ พร้อมหน้าเว็บสวยพร้อมพรีเซนต์"/>
+  <style>
+    .glass{backdrop-filter:saturate(180%) blur(10px); background:linear-gradient(180deg,rgba(255,255,255,.7),rgba(255,255,255,.5));}
+    .chip{display:inline-flex;align-items:center;gap:.5rem;padding:.25rem .6rem;border-radius:9999px;border:1px solid rgb(226,232,240);font-size:.75rem}
+  </style>
+</head>
+<body class="bg-gradient-to-b from-sky-50 via-white to-white text-slate-800">
+  <!-- NAV -->
+  <nav class="sticky top-0 z-40 border-b bg-white/80 glass">
+    <div class="mx-auto max-w-7xl px-6 py-3 flex items-center gap-4 justify-between">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-sky-600 text-white font-bold">SEA</span>
+        <span class="font-semibold">Pattaya Seafood Buffet</span>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#top-pick" class="hover:text-sky-700">ร้านแนะนำ</a>
+        <a href="#shortlist" class="hover:text-sky-700">ตัวเลือกเด่น</a>
+        <a href="#compare" class="hover:text-sky-700">เทียบกัน</a>
+        <a href="#sources" class="hover:text-sky-700">แหล่งรีวิว</a>
+        <a href="#faqs" class="hover:text-sky-700">ทิปส์</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative overflow-hidden" id="hero">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555992457-3b7000f708c5?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
+    <div class="relative mx-auto max-w-7xl px-6 py-14">
+      <p class="text-xs tracking-wider uppercase text-slate-600">อัปเดต ส.ค. 2025</p>
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">บุฟเฟ่ต์ทะเลในพัทยา — ร้านไหนดีสุดจากเสียงรีวิว?</h1>
+      <p class="mt-3 text-slate-700 md:text-lg max-w-3xl">เรารวบรวมร้านที่มี <span class="font-semibold">รีวิวจำนวนมาก</span> และมีข้อมูลสาธารณะครบถ้วน (เพจ/เบอร์/แผนที่) สรุปข้อดี–ข้อควรสังเกตให้พร้อมนำเสนอ</p>
+      <div class="mt-5 flex flex-wrap gap-2 text-slate-700">
+        <span class="chip">เน้นรีวิวจริง</span>
+        <span class="chip">ลิงก์เพจทางการ</span>
+        <span class="chip">กดโทร/นำทางได้</span>
+        <span class="chip">รวมทั้งดีและไม่ดี</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- TOP PICK -->
+  <section id="top-pick" class="mx-auto max-w-7xl px-6 py-12">
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <div class="rounded-2xl overflow-hidden shadow ring-1 ring-slate-200">
+        <img src="https://img.restaurantguru.com/cca2-Restaurant-Amporn-Seafood-Buffet-meals-1.jpg" alt="Amporn Seafood Buffet — ภาพรวมจาก RestaurantGuru" class="w-full h-80 object-cover"/>
+      </div>
+      <div>
+        <div class="chip bg-emerald-50 border-emerald-200 text-emerald-700">ตัวท็อปจากรีวิวรวม</div>
+        <h2 class="mt-3 text-2xl md:text-3xl font-bold">Amporn Seafood Buffet (อำพร ซีฟู้ด บุฟเฟต์)</h2>
+        <p class="mt-2">เรตติ้งรวมจากหน้ารีวิวสรุปประมาณ <b>~3.8/5</b> (อิง Google ~3.7/5, Facebook ~4/5)* มีรีวิวปริมาณมากและข้อมูลครบ ใช้งานง่ายสำหรับสายพาเพื่อนไปหลายคน</p>
+        <div class="mt-4 grid sm:grid-cols-2 gap-3">
+          <div class="rounded-xl border p-4 bg-white">
+            <h3 class="font-semibold">จุดเด่นที่คนชม</h3>
+            <ul class="mt-2 list-disc pl-5 text-sm space-y-1">
+              <li>วัตถุดิบหลากหลายและเติมเรื่อย ๆ</li>
+              <li>มีบริการช่วยย่าง/นึ่ง เมื่อคิวไม่หนา</li>
+              <li>ที่นั่งเยอะ เหมาะกับกลุ่มใหญ่</li>
+            </ul>
+          </div>
+          <div class="rounded-xl border p-4 bg-white">
+            <h3 class="font-semibold">ข้อควรสังเกตจากรีวิว</h3>
+            <ul class="mt-2 list-disc pl-5 text-sm space-y-1">
+              <li>ช่วงพีคคุณภาพ/ความเร็วอาจแกว่ง</li>
+              <li>เรตติ้ง Google ยังไม่สูงมาก</li>
+              <li>ควรจอง/โทรเช็กก่อนในวันหยุด</li>
+            </ul>
+          </div>
+        </div>
+        <dl class="mt-5 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+          <div><dt class="text-slate-500">ราคาเฉลี่ย</dt><dd class="font-semibold">~฿400–500/คน</dd></div>
+          <div><dt class="text-slate-500">เวลาเปิด</dt><dd class="font-semibold">ทุกวัน ~16:00–23:00</dd></div>
+          <div><dt class="text-slate-500">โทร</dt><dd class="font-semibold"><a href="tel:+66940123438">094-012-3438</a></dd></div>
+          <div><dt class="text-slate-500">พิกัด</dt><dd class="font-semibold">พัทยาสาย 3 (ดูแผนที่)</dd></div>
+        </dl>
+        <div class="mt-4 grid sm:grid-cols-2 gap-3">
+          <a href="https://www.google.com/maps/search/?api=1&query=Amporn+Seafood+Buffet+Pattaya" target="_blank" class="inline-flex items-center justify-center rounded-xl border bg-white px-4 py-3 text-sm font-semibold shadow hover:shadow-md">เปิดแผนที่</a>
+          <a href="https://restaurantguru.com/Amporn-Seafood-Buffet-Pattaya-2" target="_blank" class="inline-flex items-center justify-center rounded-xl bg-slate-900 text-white px-4 py-3 text-sm font-semibold shadow hover:bg-slate-800">อ่านรีวิวรวม</a>
+        </div>
+        <p class="mt-2 text-xs text-slate-500">*ที่มา: RestaurantGuru + เพจ Facebook ทางการของร้าน</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHORTLIST -->
+  <section id="shortlist" class="mx-auto max-w-7xl px-6 pb-4">
+    <h3 class="text-xl md:text-2xl font-bold">ตัวเลือกเด่นอื่น ๆ (คัดตามพิกัดและปริมาณรีวิว)</h3>
+    <p class="mt-1 text-slate-600">รวมทั้งรีวิวดีและไม่ดี พร้อมลิงก์ไปดูที่มาจริง</p>
+
+    <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- ARTEE -->
+      <article class="rounded-2xl bg-white shadow border overflow-hidden">
+        <div class="h-44 bg-[url('https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=1200&auto=format&fit=crop')] bg-center bg-cover"></div>
+        <div class="p-5">
+          <div class="flex flex-wrap gap-2 mb-2"><span class="chip">ปิ้งย่างช่วยย่าง</span><span class="chip">คุ้มราคา</span></div>
+          <h4 class="text-lg font-bold">ARTEE Buffet Seafood Pattaya</h4>
+          <p class="mt-1 text-sm">เลือกวัตถุดิบสดแล้วให้พนักงานช่วยปรุง/ย่างได้ บรรยากาศโล่ง ที่จอดสะดวก (โซนพัทยากลาง สาย 3)</p>
+          <ul class="mt-3 list-disc pl-5 text-sm space-y-1">
+            <li><b>รีวิวชม:</b> วัตถุดิบสดและบริการช่วยปรุง</li>
+            <li><b>รีวิวติ:</b> ช่วงพีคของหมด/เติมช้า รอคิว</li>
+          </ul>
+          <div class="mt-4 grid grid-cols-2 gap-2 text-sm">
+            <a href="https://www.facebook.com/arteebuffetseafood/" target="_blank" class="rounded-lg border px-3 py-2 text-center hover:bg-slate-50">เพจทางการ</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=ARTEE+Buffet+Seafood+Pattaya" target="_blank" class="rounded-lg border px-3 py-2 text-center hover:bg-slate-50">เปิดแผนที่</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tong Talay -->
+      <article class="rounded-2xl bg-white shadow border overflow-hidden">
+        <div class="h-44 bg-[url('https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=1200&auto=format&fit=crop')] bg-center bg-cover"></div>
+        <div class="p-5">
+          <div class="flex flex-wrap gap-2 mb-2"><span class="chip">ฮาลาล</span><span class="chip">กลุ่มใหญ่</span></div>
+          <h4 class="text-lg font-bold">Tong Talay Seafood Buffet</h4>
+          <p class="mt-1 text-sm">บุฟเฟ่ต์ซีฟู้ดปิ้งย่างรวมเครื่องดื่ม เหมาะสำหรับครอบครัว/สังสรรค์ มีหลายสาขาในพัทยา</p>
+          <ul class="mt-3 list-disc pl-5 text-sm space-y-1">
+            <li><b>รีวิวชม:</b> อาหารครบ เติมไวเมื่อคนไม่เยอะ</li>
+            <li><b>รีวิวติ:</b> วันหยุดคนแน่น ของหมดบางไอเท็ม</li>
+          </ul>
+          <div class="mt-4 grid grid-cols-2 gap-2 text-sm">
+            <a href="https://www.facebook.com/Tongtalay.seafood/" target="_blank" class="rounded-lg border px-3 py-2 text-center hover:bg-slate-50">เพจทางการ</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tong+Talay+Seafood+Buffet+Pattaya" target="_blank" class="rounded-lg border px-3 py-2 text-center hover:bg-slate-50">เปิดแผนที่</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ploen Talay -->
+      <article class="rounded-2xl bg-white shadow border overflow-hidden">
+        <div class="h-44 bg-[url('https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1200&auto=format&fit=crop')] bg-center bg-cover"></div>
+        <div class="p-5">
+          <div class="flex flex-wrap gap-2 mb-2"><span class="chip">ริมทะเล</span><span class="chip">ไลฟ์แบนด์</span></div>
+          <h4 class="text-lg font-bold">Ploen Talay Seafood</h4>
+          <p class="mt-1 text-sm">ร้านซีฟู้ดริมทะเลยอดนิยม (มีโซนบุฟเฟ่ต์/ไลน์อาหารบางช่วง) จุดเด่นคือวิวและบรรยากาศ</p>
+          <ul class="mt-3 list-disc pl-5 text-sm space-y-1">
+            <li><b>รีวิวชม:</b> วิวทะเลสวย บรรยากาศดี</li>
+            <li><b>รีวิวติ:</b> ช่วงเทศกาลรอนาน ราคาไม่ถูก</li>
+          </ul>
+          <div class="mt-4 grid grid-cols-2 gap-2 text-sm">
+            <a href="https://www.facebook.com/ploentalayseafood/" target="_blank" class="rounded-lg border px-3 py-2 text-center hover:bg-slate-50">เพจทางการ</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Ploen+Talay+Seafood+Pattaya" target="_blank" class="rounded-lg border px-3 py-2 text-center hover:bg-slate-50">เปิดแผนที่</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- The Boat @ A-One -->
+      <article class="rounded-2xl bg-white shadow border overflow-hidden">
+        <div class="h-44 bg-[url('https://images.unsplash.com/photo-1559847844-5315695dadae?q=80&w=1200&auto=format&fit=crop')] bg-center bg-cover"></div>
+        <div class="p-5">
+          <div class="flex flex-wrap gap-2 mb-2"><span class="chip">บุฟเฟ่ต์โรงแรม</span><span class="chip">หลากหลาย</span></div>
+          <h4 class="text-lg font-bold">The Boat Seafood & International Buffet @ A-One</h4>
+          <p class="mt-1 text-sm">สายไลน์บุฟเฟ่ต์จัดเต็มในโรงแรม (โปรอาจเปลี่ยนตามฤดูกาล — แนะนำเช็กหน้าเพจ/โทรก่อน)</p>
+          <ul class="mt-3 list-disc pl-5 text-sm space-y-1">
+            <li><b>รีวิวชม:</b> ไลน์อาหารเยอะ มีทั้งซีฟู้ด/ซาชิมิ/ของหวาน</li>
+            <li><b>รีวิวติ:</b> ช่วงโปรฮิตคนแน่น ของหมดไว</li>
+          </ul>
+          <div class="mt-4 grid grid-cols-2 gap-2 text-sm">
+            <a href="https://www.facebook.com/aonepattaya" target="_blank" class="rounded-lg border px-3 py-2 text-center hover:bg-slate-50">เพจ A-One Pattaya</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=A-One+Pattaya+The+Boat+Buffet" target="_blank" class="rounded-lg border px-3 py-2 text-center hover:bg-slate-50">เปิดแผนที่</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- King Seafood -->
+      <article class="rounded-2xl bg-white shadow border overflow-hidden">
+        <div class="h-44 bg-[url('https://images.unsplash.com/photo-1559847843-8e7c3f0a8a3a?q=80&w=1200&auto=format&fit=crop')] bg-center bg-cover"></div>
+        <div class="p-5">
+          <div class="flex flex-wrap gap-2 mb-2"><span class="chip">ริมทะเล</span><span class="chip">เหมาะกลุ่มใหญ่</span></div>
+          <h4 class="text-lg font-bold">King Seafood (Walking Street)</h4>
+          <p class="mt-1 text-sm">ร้านซีฟู้ดชื่อดังโซน Walking Street (มีแพ็กเกจ/โปรบุฟเฟ่ต์บางช่วงกับพาร์ทเนอร์) วิวดี</p>
+          <ul class="mt-3 list-disc pl-5 text-sm space-y-1">
+            <li><b>รีวิวชม:</b> บรรยากาศริมน้ำ วัตถุดิบสด</li>
+            <li><b>รีวิวติ:</b> ราคาสูงกว่าร้านท้องถิ่น ที่นั่งแน่นช่วงค่ำ</li>
+          </ul>
+          <div class="mt-4 grid grid-cols-2 gap-2 text-sm">
+            <a href="https://www.facebook.com/kingseafoodpattaya/" target="_blank" class="rounded-lg border px-3 py-2 text-center hover:bg-slate-50">เพจทางการ</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=King+Seafood+Pattaya+Walking+Street" target="_blank" class="rounded-lg border px-3 py-2 text-center hover:bg-slate-50">เปิดแผนที่</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- เสริม: ร้านท้องถิ่นคุ้มค่า -->
+      <article class="rounded-2xl bg-white shadow border overflow-hidden">
+        <div class="h-44 bg-[url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop')] bg-center bg-cover"></div>
+        <div class="p-5">
+          <div class="flex flex-wrap gap-2 mb-2"><span class="chip">คุ้มค่า</span><span class="chip">ท้องถิ่น</span></div>
+          <h4 class="text-lg font-bold">ตัวเลือกคุ้มงบ (อัปเดตตามฤดูกาล)</h4>
+          <p class="mt-1 text-sm">มีร้านบุฟเฟ่ต์ซีฟู้ดท้องถิ่นหลายจุดที่ราคาเข้าถึงง่าย—แนะนำเปิดแผนที่ค้นหาใกล้ตำแหน่งปัจจุบันและเช็กรีวิวล่าสุดก่อนตัดสินใจ</p>
+          <div class="mt-4">
+            <a href="https://www.google.com/maps/search/?api=1&query=seafood+buffet+Pattaya" target="_blank" class="rounded-lg border px-3 py-2 text-sm inline-flex hover:bg-slate-50">ค้นหารอบ ๆ บน Google Maps</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- COMPARE -->
+  <section id="compare" class="mx-auto max-w-7xl px-6 py-12">
+    <h3 class="text-xl md:text-2xl font-bold">ตารางเปรียบเทียบเร็ว</h3>
+    <div class="mt-4 overflow-x-auto rounded-2xl border bg-white">
+      <table class="min-w-full text-sm">
+        <thead class="bg-slate-50 text-slate-600">
+          <tr>
+            <th class="p-3 text-left">ร้าน</th>
+            <th class="p-3 text-left">บรรยากาศ</th>
+            <th class="p-3 text-left">ราคาโดยประมาณ</th>
+            <th class="p-3 text-left">เด่น</th>
+            <th class="p-3 text-left">ข้อสังเกต</th>
+            <th class="p-3 text-left">ลิงก์</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="p-3 font-semibold">Amporn Seafood Buffet</td>
+            <td class="p-3">กว้าง ขวาง เหมาะกลุ่มใหญ่</td>
+            <td class="p-3">~฿400–500</td>
+            <td class="p-3">ไลน์เยอะ เติมเรื่อย ๆ</td>
+            <td class="p-3">พีคแล้วช้า/คุณภาพแกว่ง</td>
+            <td class="p-3"><a class="underline" target="_blank" href="https://restaurantguru.com/Amporn-Seafood-Buffet-Pattaya-2">รีวิวรวม</a></td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-3 font-semibold">ARTEE Buffet Seafood</td>
+            <td class="p-3">โปร่ง ช่วยย่างให้</td>
+            <td class="p-3">~฿4xx–6xx</td>
+            <td class="p-3">สด คุ้ม ช่วยปรุง</td>
+            <td class="p-3">รอคิว/เติมไม่ทัน</td>
+            <td class="p-3"><a class="underline" target="_blank" href="https://www.facebook.com/arteebuffetseafood/">เพจ</a></td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-3 font-semibold">Tong Talay Seafood Buffet</td>
+            <td class="p-3">ฮาลาล กลุ่มครอบครัว</td>
+            <td class="p-3">~฿4xx–6xx</td>
+            <td class="p-3">ครบ เติมไว (ช่วงโล่ง)</td>
+            <td class="p-3">เทศกาลคนแน่น</td>
+            <td class="p-3"><a class="underline" target="_blank" href="https://www.facebook.com/Tongtalay.seafood/">เพจ</a></td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-3 font-semibold">Ploen Talay Seafood</td>
+            <td class="p-3">ริมทะเล วิวดี</td>
+            <td class="p-3">~฿6xx–8xx+</td>
+            <td class="p-3">บรรยากาศสุดปัง</td>
+            <td class="p-3">ราคาไม่ถูก รอนาน</td>
+            <td class="p-3"><a class="underline" target="_blank" href="https://www.facebook.com/ploentalayseafood/">เพจ</a></td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-3 font-semibold">The Boat @ A-One</td>
+            <td class="p-3">โรงแรม ไลน์แน่น</td>
+            <td class="p-3">~฿8xx–1,2xx</td>
+            <td class="p-3">หลากหลาย/สะดวก</td>
+            <td class="p-3">โปรทำให้คนแน่น</td>
+            <td class="p-3"><a class="underline" target="_blank" href="https://www.facebook.com/aonepattaya">เพจ</a></td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-3 font-semibold">King Seafood</td>
+            <td class="p-3">ริมน้ำ Walking St.</td>
+            <td class="p-3">~฿9xx–1,5xx</td>
+            <td class="p-3">วิว/วัตถุดิบ</td>
+            <td class="p-3">ราคาสูง คนเยอะ</td>
+            <td class="p-3"><a class="underline" target="_blank" href="https://www.facebook.com/kingseafoodpattaya/">เพจ</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SOURCES -->
+  <section id="sources" class="bg-slate-50 border-t">
+    <div class="mx-auto max-w-7xl px-6 py-12">
+      <h3 class="text-xl md:text-2xl font-bold">แหล่งรีวิวและลิงก์ที่มา</h3>
+      <p class="mt-1 text-slate-600">คลิกเพื่ออ่านรีวิวต้นฉบับและดูภาพบรรยากาศจริง</p>
+      <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+        <div class="rounded-xl border bg-white p-4">
+          <h4 class="font-semibold">Amporn Seafood Buffet</h4>
+          <ul class="mt-2 list-disc pl-5 space-y-1">
+            <li><a class="underline" href="https://restaurantguru.com/Amporn-Seafood-Buffet-Pattaya-2" target="_blank">RestaurantGuru</a></li>
+            <li><a class="underline" href="https://www.facebook.com/amporn.buffet/" target="_blank">Facebook Page</a></li>
+            <li><a class="underline" href="https://www.google.com/maps/search/?api=1&query=Amporn+Seafood+Buffet+Pattaya" target="_blank">Google Maps</a></li>
+          </ul>
+        </div>
+        <div class="rounded-xl border bg-white p-4">
+          <h4 class="font-semibold">ARTEE Buffet Seafood</h4>
+          <ul class="mt-2 list-disc pl-5 space-y-1">
+            <li><a class="underline" href="https://www.facebook.com/arteebuffetseafood/" target="_blank">Facebook Page</a></li>
+            <li><a class="underline" href="https://www.google.com/maps/search/?api=1&query=ARTEE+Buffet+Seafood+Pattaya" target="_blank">Google Maps</a></li>
+          </ul>
+        </div>
+        <div class="rounded-xl border bg-white p-4">
+          <h4 class="font-semibold">Tong Talay Seafood Buffet</h4>
+          <ul class="mt-2 list-disc pl-5 space-y-1">
+            <li><a class="underline" href="https://www.facebook.com/Tongtalay.seafood/" target="_blank">Facebook Page</a></li>
+            <li><a class="underline" href="https://www.google.com/maps/search/?api=1&query=Tong+Talay+Seafood+Buffet+Pattaya" target="_blank">Google Maps</a></li>
+          </ul>
+        </div>
+        <div class="rounded-xl border bg-white p-4">
+          <h4 class="font-semibold">Ploen Talay Seafood</h4>
+          <ul class="mt-2 list-disc pl-5 space-y-1">
+            <li><a class="underline" href="https://www.facebook.com/ploentalayseafood/" target="_blank">Facebook Page</a></li>
+            <li><a class="underline" href="https://www.google.com/maps/search/?api=1&query=Ploen+Talay+Seafood+Pattaya" target="_blank">Google Maps</a></li>
+          </ul>
+        </div>
+        <div class="rounded-xl border bg-white p-4">
+          <h4 class="font-semibold">The Boat @ A-One</h4>
+          <ul class="mt-2 list-disc pl-5 space-y-1">
+            <li><a class="underline" href="https://www.facebook.com/aonepattaya" target="_blank">Facebook Page</a></li>
+            <li><a class="underline" href="https://www.google.com/maps/search/?api=1&query=A-One+Pattaya+The+Boat+Buffet" target="_blank">Google Maps</a></li>
+          </ul>
+        </div>
+        <div class="rounded-xl border bg-white p-4">
+          <h4 class="font-semibold">King Seafood (Walking St.)</h4>
+          <ul class="mt-2 list-disc pl-5 space-y-1">
+            <li><a class="underline" href="https://www.facebook.com/kingseafoodpattaya/" target="_blank">Facebook Page</a></li>
+            <li><a class="underline" href="https://www.google.com/maps/search/?api=1&query=King+Seafood+Pattaya+Walking+Street" target="_blank">Google Maps</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-6 text-xs text-slate-500">หมายเหตุ: ภาพปกบางส่วนใช้ภาพประกอบจาก Unsplash เพื่อความสวยงามในการพรีเซนต์ — แนะนำเปิดลิงก์เพจเพื่อดูรูปจริงของร้าน</p>
+    </div>
+  </section>
+
+  <!-- FAQs / TIPS -->
+  <section id="faqs" class="mx-auto max-w-7xl px-6 py-12">
+    <h3 class="text-xl md:text-2xl font-bold">ทิปส์เลือกบุฟเฟ่ต์ทะเลในพัทยา</h3>
+    <div class="mt-4 grid md:grid-cols-2 gap-6 text-sm">
+      <div class="rounded-xl border bg-white p-5">
+        <h4 class="font-semibold">ไปกี่คน — เลือกแบบไหนดี</h4>
+        <p class="mt-2">ถ้าไป <b>4–10 คน</b> เน้นสะดวกและที่นั่งเยอะ เลือก <b>Amporn</b> หรือ <b>Tong Talay</b>. ถ้าอยากได้บริการช่วยย่าง/ปรุง เลือก <b>ARTEE</b>. ถ้าต้องการบรรยากาศริมทะเล ให้ <b>Ploen Talay</b> หรือ <b>King Seafood</b>.</p>
+      </div>
+      <div class="rounded-xl border bg-white p-5">
+        <h4 class="font-semibold">ช่วงเวลา</h4>
+        <p class="mt-2">วันหยุด/เทศกาลคิวจะยาว แนะนำไปหัวค่ำก่อน 18:00 หรือหลัง 20:00 และ <b>โทรเช็ก</b> สต๊อก/รายการพิเศษล่วงหน้า</p>
+      </div>
+      <div class="rounded-xl border bg-white p-5">
+        <h4 class="font-semibold">งบประมาณ</h4>
+        <p class="mt-2">งบ <b>~฿400–600</b>: เลือก <b>Amporn / ARTEE / Tong Talay</b>. งบ <b>~฿800+</b>: เน้นโรงแรม/ริมทะเล เช่น <b>The Boat @ A-One</b> หรือ <b>King Seafood</b>.</p>
+      </div>
+      <div class="rounded-xl border bg-white p-5">
+        <h4 class="font-semibold">หมายเหตุราคา/โปร</h4>
+        <p class="mt-2">ราคาและโปรมักเปลี่ยนตามฤดูกาล ควรตรวจสอบบนเพจทางการ/อินบ็อกซ์ก่อนเสมอ</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-slate-500">
+    จัดทำเพื่อการนำเสนอเพื่อน ๆ · ขอให้ตรวจสอบราคา/เวลาเปิดล่าสุดจากเพจร้านก่อนไปจริง · อัปเดต ส.ค. 2025
+  </footer>
+</body>
+</html>
